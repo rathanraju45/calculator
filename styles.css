@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    margin-left: 2%;
+    text-shadow: 2px 2px 4px lightgreen;
+}
+.nav{
+    margin-top: 25px;
+    margin-left: 1.5%;
+    width: 98%;
+}
+.nav-head{
+    font-size: 2.5em;
+    float: left;
+    margin-left: 45px;
+    text-shadow: 3px 3px 4px lightgreen;
+}
+.nav ul{
+    list-style: none;
+    margin-left: 65%;
+}
+.nav ul li a{
+    font-size: 1.2em;
+    display: flex;
+    color: white;
+    text-shadow: 2px 2px 4px lightgreen;
+    float: left;
+    text-decoration: none;
+    margin-left: 2em;
+    margin-top: 1.4%;
+    padding: 3px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.main-p{
+    margin-top: 70px;
+    text-align: center;
+    width: 80%;
+    margin-left: 9%;
+    font-size: 1.5em;
+}
+.main-cont{
+    margin-top: 40px;
+    width: 96%;
+    display: flex;
+    justify-content: center;
+}
+.sub-cont{
+    border: solid 1px white;
+    width: 300px;
+    color: black;
+    height: 300px;
+    float: left;
+    margin-left: 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(math.png);
+    background-position: center;
+    border-radius: 5%;
+    transition: transform 0.1s ease;
+}
+.sub-cont:hover {
+    transform: scaleX(1.05) scaleY(1.05);
+    box-shadow: 0 0 15px lightgreen;
+  }
+.sub-cont p{
+    color: white;
+    text-shadow: 2px 2px 4px lightgreen;
+    text-align: center;
+    margin-top: 35%;
+    font-size: 2.5em;
+    width: 300px;
+}
+.third span{
+    font-size: 0.8em;
+}
+.nav ul li a:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.09);
+    box-shadow: 0 0 5px lightgreen;
+}
+.main-p {
+    text-shadow: 2px 2px 4px lightgreen;
+}
+h2{
+    margin-left: 40%;
+    margin-top: 2%;
+    font-size: 2em;
+}
+.matrix{
+    display: none;
+}
+
+
+
