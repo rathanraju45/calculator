@@ -20,19 +20,139 @@
     <br>
     <p class="main-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo expedita labore, sequi similique <br>sunt perferendis ut blanditiis optio amet facere dolorum consequatur laborum aperiam quas aut voluptatem illum, libero possimus. Provident repellendus, officiis exercitationem voluptatum perferendis aperiam quaerat nihil ullam eius error asperiores saepe sit dicta natus, totam vero blanditiis!</p>
     <div class="main-cont">
-        <a href=""><div class="sub-cont click1" onclick="matrixDisplay()"><p>Matrix Calculations</p></div></a>
-        <a href=""><div class="sub-cont" onclick="vectorDisplay()"><p>Vector Calculations</p></div></a>
-        <a href=""><div class="sub-cont third" onclick="TrigDisplay()"><p><span>Trignometric</span> Calculations</p></div></a>
-        <a href=""><div class="sub-cont" onclick="integDisplay()"><p>Integration&<br>Differentiation</p></div></a>
+        <div class="sub-cont"><p>Matrix Calculations</p></div>
+        <div class="sub-cont"><p>Vector Calculations</p></div>
+        <div class="sub-cont third"><p><span>Trignometric</span> Calculations</p></div>
+        <div class="sub-cont"><p>Integration&<br>Differentiation</p></div>
     </div>
-    <div class="matrix">
-        <h2>Matrix Calculations</h2>
-        <div class="main-cont">
-        <a href=""><div class="sub-cont"><p>Basic <br>Calculations</p></div></a>
-        <a href=""><div class="sub-cont"><p>Determinant<br>of matrix</p></div></a>
-        <a href=""><div class="sub-cont third"><p><span>Inverse&</span><br>Transposition</p></div></a>
-        <a href=""><div class="sub-cont"><p>Eigen values&<br>Vectors</p></div></a>
+    <h2>Matrix Calculations</h2>
+    <div class="matrix-2">
+        <div class="mat-a">
+            <p>Matrix A</p>
+            <table>
+                <tr>
+                    <td><input type="text" id="a11-2"></td>
+                    <td><input type="text" id="a12-2"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="a21-2"></td>
+                    <td><input type="text" id="a22-2"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="mat-b">
+            <p>Matrix B</p>
+            <table>
+                <tr>
+                    <td><input type="text" id="b11-2"></td>
+                    <td><input type="text" id="b12-2"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="b21-2"></td>
+                    <td><input type="text" id="b22-2"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="mat-ans">
+            <p>Result Matrix</p>
+            <table>
+                <tr>
+                    <td><input type="text" id="r11-2"></td>
+                    <td><input type="text" id="r12-2"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="r21-2"></td>
+                    <td><input type="text" id="r22-2"></td>
+                </tr>
+            </table>
+        </div>
     </div>
+    <div class="buts">
+        <button class="but-cal" onclick="cal2(1)">Add</button>
+        <button class="but-cal" onclick="cal2(2)">Subtract</button>
+        <button class="but-cal" onclick="cal2(3)">Multiply</button>
+        <button class="but-cal" onclick="cal2(4)">Divide</button>
+    </div>
+    <div class="buts">
+        <button class="but-cal" onclick="cal2(5)">Square it</button>
+        <button class="but-cal" onclick="cal2(6)">Cube it</button>
+        <button class="but-cal" onclick="cal2(7)">Swap them</button>
+        <button class="but-cal" onclick="cal2(8)">clear A</button>
+        <button class="but-cal" onclick="cal2(9)">clear B</button>
+    </div>
+    <div class="matrix-3">
+        <div class="mat-a">
+            <p>Matrix A</p>
+            <table>
+                <tr>
+                    <td><input type="text" id="a11-3"></td>
+                    <td><input type="text" id="a12-3"></td>
+                    <td><input type="text" id="a13-3"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="a21-3"></td>
+                    <td><input type="text" id="a22-3"></td>
+                    <td><input type="text" id="a23-3"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="a31-3"></td>
+                    <td><input type="text" id="a32-3"></td>
+                    <td><input type="text" id="a33-3"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="mat-b">
+            <p>Matrix B</p>
+            <table>
+                <tr>
+                    <td><input type="text" id="b11-3"></td>
+                    <td><input type="text" id="b12-3"></td>
+                    <td><input type="text" id="b13-3"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="b21-3"></td>
+                    <td><input type="text" id="b22-3"></td>
+                    <td><input type="text" id="b23-3"></td>
+                </tr>
+                    <td><input type="text" id="b31-3"></td>
+                    <td><input type="text" id="b32-3"></td>
+                    <td><input type="text" id="b33-3"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="mat-ans">
+            <p>Result Matrix</p>
+            <table>
+                <tr>
+                    <td><input type="text" id="r11-3"></td>
+                    <td><input type="text" id="r12-3"></td>
+                    <td><input type="text" id="r13-3"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="r21-3"></td>
+                    <td><input type="text" id="r22-3"></td>
+                    <td><input type="text" id="r23-3"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="r31-3"></td>
+                    <td><input type="text" id="r32-3"></td>
+                    <td><input type="text" id="r33-3"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="buts">
+        <button class="but-cal" onclick="cal3(1)">Add</button>
+        <button class="but-cal" onclick="cal3(2)">Subtract</button>
+        <button class="but-cal" onclick="cal3(3)">Multiply</button>
+        <button class="but-cal" onclick="cal3(4)">Divide</button>
+    </div>
+    <div class="buts">
+        <button class="but-cal" onclick="cal3(5)">Square it</button>
+        <button class="but-cal" onclick="cal3(6)">Cube it</button>
+        <button class="but-cal" onclick="cal3(7)">Swap them</button>
+        <button class="but-cal" onclick="cal3(8)">clear A</button>
+        <button class="but-cal" onclick="cal3(9)">clear B</button>
     </div>
     <script src="script.js"></script>
 </body>
